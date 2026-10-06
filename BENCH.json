@@ -1,0 +1,320 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "STARDOG_EXAMPLES",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\PHILOSOPHY_SEMANTICS\\STARDOG_EXAMPLES\\UPSTREAM_CLONE",
+    "git": {
+      "head": "f95303fe40a0016c655b2855c58fcdbf2bcc213b",
+      "url": "https://github.com/stardog-union/stardog-examples",
+      "branch": "develop",
+      "committed_at": "2026-08-06T15:25:52-04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 53,
+    "source_files_scanned": 11,
+    "lines_of_code": 28416,
+    "languages": {
+      ".js": 11,
+      "(none)": 6,
+      ".gradle": 4,
+      ".md": 4,
+      ".properties": 4,
+      ".srs": 3,
+      ".rdf": 3,
+      ".bat": 2,
+      ".ttl": 2,
+      ".sparql": 2,
+      ".jar": 2,
+      ".css": 2,
+      ".png": 2,
+      ".yaml": 1,
+      ".csv": 1
+    }
+  },
+  "licence": {
+    "spdx": "Apache-2.0",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 0,
+    "unique": 0,
+    "by_ecosystem": {},
+    "list": []
+  },
+  "owasp_top10": {
+    "total_findings": 16,
+    "files_with_findings": 8,
+    "severity": {
+      "high": 6,
+      "medium": 0,
+      "low": 10
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 5,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/babel.min.js",
+            "line": 1,
+            "cwe": "CWE-95",
+            "snippet": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports.Babel=t():e."
+          },
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/d3.v5.js",
+            "line": 2199,
+            "cwe": "CWE-95",
+            "snippet": "return (m = reHex3.exec(format)) ? (m = parseInt(m[1], 16), new Rgb((m >> 8 & 0xf) | (m >> 4 & 0x0f0), (m >> 4 & 0xf) | (m & 0xf0), ((m & 0xf) << 4) | (m & 0xf), 1)) // #f00"
+          },
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/lodash.core.min.js",
+            "line": 15,
+            "cwe": "CWE-78",
+            "snippet": "o=Array(t+1);++u<t;)o[u]=e[u];return o[t]=r(i),n.apply(this,o)}}function $(n){return(null==n?0:n.length)?p(n,1):[]}function q(n){return n&&n.length?n[0]:Z}function P(n,t,r){var e=n"
+          },
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/stardog.js",
+            "line": 1364,
+            "cwe": "CWE-95",
+            "snippet": "var uid = /[^.]+$/.exec(_coreJsData && _coreJsData.keys && _coreJsData.keys.IE_PROTO || '');"
+          },
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/stardog.min.js",
+            "line": 1,
+            "cwe": "CWE-95",
+            "snippet": "!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define(t):e.stardogjs=t()}(this,function(){\"use strict\""
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 3,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/babel.min.js",
+            "line": 6,
+            "cwe": "CWE-",
+            "snippet": "},e.prototype.setData=function(e,t){return this.data[e]=t},e.prototype.getData=function(e){var t=this;do{var r=t.data[e];if(null!=r)return r}while(t=t.parent)},e.prototype.removeDa"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/d3.v5.js",
+            "line": 4784,
+            "cwe": "CWE-",
+            "snippet": "// TODO Allow start and end angle to be specified?"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/stardog.min.js",
+            "line": 2,
+            "cwe": "CWE-",
+            "snippet": "//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RhcmRvZy5taW4uanMiLCJzb3VyY2VzIjpbIi4uL25vZGVfbW9kdWxlcy9mZXRjaC1wb255ZmlsbC9idWlsZC9m"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/prop-types.js",
+            "line": 752,
+            "cwe": "CWE-798",
+            "snippet": "var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';"
+          }
+        ]
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 7,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/babel.min.js",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "c&&l in g||(f=c?E[l]:u[l],g[l]=d&&\"function\"!=typeof E[l]?u[l]:v&&c?s(f,n):y&&E[l]==f?function(e){var t=function(t,r,n){if(this instanceof e){switch(arguments.length){case 0:return"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/d3.v5.js",
+            "line": 819,
+            "cwe": "CWE-319",
+            "snippet": "var xhtml = \"http://www.w3.org/1999/xhtml\";"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/lodash.js",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "* Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/prop-types.js",
+            "line": 117,
+            "cwe": "CWE-319",
+            "snippet": "'Read more at http://fb.me/use-check-prop-types'"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/react-dom.production.min.js",
+            "line": 46,
+            "cwe": "CWE-319",
+            "snippet": "(1>=b.length?void 0:m(\"93\"),b=b[0]),c=\"\"+b),null==c&&(c=\"\"));a._wrapperState={initialValue:\"\"+c}}function mf(a,b){var c=b.value;null!=c&&(c=\"\"+c,c!==a.value&&(a.value=c),null==b.de"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/stardog.js",
+            "line": 14,
+            "cwe": "CWE-319",
+            "snippet": "var author = { \"name\": \"Stardog Union\", \"url\": \"http://stardog.com\" };"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/stardog.min.js",
+            "line": 1,
+            "cwe": "CWE-319",
+            "snippet": "!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define(t):e.stardogjs=t()}(this,function(){\"use strict\""
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 2,
+    "files_with_findings": 1,
+    "severity": {
+      "high": 0,
+      "medium": 1,
+      "low": 1
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "weblog/stardog-d3/js/babel.min.js",
+            "line": 8,
+            "cwe": "CWE-1336",
+            "snippet": "this.next(),a=this.finishNode(o,\"UpdateExpression\")}return a},se.parseExprSubscripts=function(e){var t=this.state.start,r=this.state.startLoc,n=this.state.potentialArrowAt,i=this.p"
+          }
+        ]
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/babel.min.js",
+            "line": 18,
+            "cwe": "CWE-",
+            "snippet": "}}function u(e){for(var t=void 0;t=e.parentPath;){if(t.isIfStatement()||t.isConditionalExpression())return\"test\"===e.key?void 0:t;e=t}}function l(e,t){var r=u(e);if(r){var n=r.get("
+          }
+        ]
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:03d1517c-f0b4-522c-ac9f-0caa39ad0697",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-05T16:39:28Z",
+      "component": {
+        "type": "application",
+        "name": "STARDOG_EXAMPLES",
+        "version": "f95303fe40a0",
+        "bom-ref": "pkg:generic/anticloud/STARDOG_EXAMPLES@f95303fe40a0",
+        "purl": "pkg:generic/anticloud/STARDOG_EXAMPLES@f95303fe40a0",
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "f95303fe40a0016c655b2855c58fcdbf2bcc213b"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/stardog-union/stardog-examples"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": []
+  },
+  "elapsed_seconds": 28.67
+}
