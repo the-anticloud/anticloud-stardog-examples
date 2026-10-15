@@ -1,0 +1,16 @@
+{
+ "framework": "14_FIPS_140_3",
+ "title": "FIPS 140-3 cryptographic module validation",
+ "project": "STARDOG_EXAMPLES",
+ "basis": [
+  {
+   "check": "08_soc2_type2",
+   "status": "PASS",
+   "observed": "9/9 controls evidenced (100.0%)"
+  }
+ ],
+ "verdict": "CONTROLS EVIDENCED \u2014 all basis checks PASS",
+ "pax_provenance": "Run ID loiskleinner/pax-benchmark-runner v3, 2026-10-02, Kaggle T4 x2 (2x 16GB VRAM), Ubuntu 22.04, Python 3.12. These are PAX L5 Narrow L2 General 27B model-level results \u2014 shared model component, not this project's verdict.",
+ "bench_sha3": "c9be72be6aea493bd1df314331250dc4c398b77fe0345fcdd6107484e2cd361c",
+ "register_sha3": "49caeaa17b20a8f06261a9894b6d3902d3ef262afa46504754114bb88183fbf1"
+}

@@ -1,0 +1,431 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "STARDOG_EXAMPLES",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\PHILOSOPHY_SEMANTICS\\STARDOG_EXAMPLES\\UPSTREAM_CLONE",
+    "git": {
+      "head": "f95303fe40a0016c655b2855c58fcdbf2bcc213b",
+      "url": "https://github.com/stardog-union/stardog-examples",
+      "branch": "develop",
+      "committed_at": "2026-08-06T15:25:52-04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 314,
+    "source_files_scanned": 60,
+    "lines_of_code": 15101,
+    "languages": {
+      ".ttl": 35,
+      ".java": 31,
+      ".sms": 23,
+      ".md": 19,
+      ".csv": 19,
+      ".sparql": 17,
+      ".gradle": 14,
+      "(none)": 13,
+      ".properties": 12,
+      ".sh": 12,
+      ".js": 11,
+      ".cs": 11,
+      ".png": 9,
+      ".sql": 9,
+      ".html": 7
+    }
+  },
+  "licence": {
+    "spdx": "Apache-2.0",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 0,
+    "unique": 0,
+    "by_ecosystem": {},
+    "list": []
+  },
+  "owasp_top10": {
+    "total_findings": 58,
+    "files_with_findings": 50,
+    "severity": {
+      "high": 6,
+      "medium": 0,
+      "low": 52
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/stardog.js",
+            "line": 1364,
+            "cwe": "CWE-95",
+            "snippet": "var uid = /[^.]+$/.exec(_coreJsData && _coreJsData.keys && _coreJsData.keys.IE_PROTO || '');"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/Program.cs",
+            "line": 38,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Change the connection string for your Stardog instance's host, port and credentials"
+          },
+          {
+            "severity": "low",
+            "file": "examples/cli/cluster/terraform/stardog/setup.sh",
+            "line": 27,
+            "cwe": "CWE-",
+            "snippet": "# todo - do not hardcode the address?"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 5,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "weblog/stardog-d3/js/prop-types.js",
+            "line": 752,
+            "cwe": "CWE-798",
+            "snippet": "var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';"
+          },
+          {
+            "severity": "high",
+            "file": "weblog/stardog-client/src/main/java/com/stardog/examples/StardogClient.java",
+            "line": 27,
+            "cwe": "CWE-798",
+            "snippet": "private static String password = \"admin\";"
+          },
+          {
+            "severity": "high",
+            "file": "examples/JavaStardogClient/app/src/main/java/JavaStardogClient/App.java",
+            "line": 24,
+            "cwe": "CWE-798",
+            "snippet": "private static final String password = \"admin\";"
+          },
+          {
+            "severity": "high",
+            "file": "examples/dotnet/HttpApiConsoleSample/Program.cs",
+            "line": 35,
+            "cwe": "CWE-798",
+            "snippet": "const string STARDOG_PASSWORD = \"admin\";"
+          },
+          {
+            "severity": "high",
+            "file": "examples/dotnet/DotNetRDFConsoleSample/Program.cs",
+            "line": 21,
+            "cwe": "CWE-798",
+            "snippet": "const string STARDOG_PASSWORD = \"admin\";"
+          }
+        ]
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 50,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/lodash.js",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "* Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/prop-types.js",
+            "line": 117,
+            "cwe": "CWE-319",
+            "snippet": "'Read more at http://fb.me/use-check-prop-types'"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-d3/js/stardog.js",
+            "line": 14,
+            "cwe": "CWE-319",
+            "snippet": "var author = { \"name\": \"Stardog Union\", \"url\": \"http://stardog.com\" };"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-client/src/main/java/com/stardog/examples/StardogClient.java",
+            "line": 28,
+            "cwe": "CWE-319",
+            "snippet": "private static String url = \"http://localhost:5820\";"
+          },
+          {
+            "severity": "low",
+            "file": "weblog/stardog-client/src/main/java/com/stardog/examples/StardogSpringClient.java",
+            "line": 39,
+            "cwe": "CWE-319",
+            "snippet": "String sparql = \"PREFIX foaf:<http://xmlns.com/foaf/0.1/> \" +"
+          },
+          {
+            "severity": "low",
+            "file": "examples/service/test/src/com/complexible/stardog/examples/service/TestExampleService.java",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2017, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/service/main/src/com/complexible/stardog/examples/service/ExampleService.java",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2017, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/service/main/src/com/complexible/stardog/examples/service/ExampleServiceModule.java",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2017, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/python-client/sdclient/app.py",
+            "line": 10,
+            "cwe": "CWE-319",
+            "snippet": "'endpoint': 'http://localhost:5820',"
+          },
+          {
+            "severity": "low",
+            "file": "examples/JavaStardogClient/app/src/main/java/JavaStardogClient/App.java",
+            "line": 22,
+            "cwe": "CWE-319",
+            "snippet": "private static final String url = \"http://localhost:5820\";"
+          },
+          {
+            "severity": "low",
+            "file": "examples/http_handler/test/src/com/complexible/stardog/examples/handler/TestHttpHandler.java",
+            "line": 40,
+            "cwe": "CWE-319",
+            "snippet": "private static String SERVER_URL = \"http://localhost:\" + TEST_PORT;"
+          },
+          {
+            "severity": "low",
+            "file": "examples/graph-analytics/build.sh",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "stardog namespace add --prefix net --uri http://routers.stardog.com/ router"
+          },
+          {
+            "severity": "low",
+            "file": "examples/graph-analytics/network.sh",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "stardog namespace add --prefix net --uri http://routers.stardog.com/ network"
+          },
+          {
+            "severity": "low",
+            "file": "examples/graph-analytics/solutions.sh",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "stardog namespace add -u $U -p $P --prefix net --uri http://routers.stardog.com/ router"
+          },
+          {
+            "severity": "low",
+            "file": "examples/function/test/src/com/complexible/stardog/examples/functions/TestTitleCaseFunction.java",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "* http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "examples/function/main/src/com/complexible/stardog/plan/aggregates/GMean.java",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "* http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "examples/function/main/src/com/complexible/stardog/examples/functions/TitleCase.java",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "* http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/Program.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/ObjectModels/Album.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/ObjectModels/Artist.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/ObjectModels/Band.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/ObjectModels/IArtist.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/ObjectModels/Person.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/ObjectModels/SoloArtist.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          },
+          {
+            "severity": "low",
+            "file": "examples/dotnet/TrinityConsoleSample/ObjectModels/Song.cs",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "* Copyright (c) 2010 - 2019, Stardog Union. <http://www.stardog.com>"
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 1,
+    "files_with_findings": 1,
+    "severity": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "examples/dotnet/DotNetRDFConsoleSample/Program.cs",
+            "line": 34,
+            "cwe": "CWE-1336",
+            "snippet": "IStoreTemplate template = stardog.GetDefaultTemplate(DATABASE_NAME);"
+          }
+        ]
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:03d1517c-f0b4-522c-ac9f-0caa39ad0697",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-06T06:15:16Z",
+      "component": {
+        "type": "application",
+        "name": "STARDOG_EXAMPLES",
+        "version": "f95303fe40a0",
+        "bom-ref": "pkg:generic/anticloud/STARDOG_EXAMPLES@f95303fe40a0",
+        "purl": "pkg:generic/anticloud/STARDOG_EXAMPLES@f95303fe40a0",
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "f95303fe40a0016c655b2855c58fcdbf2bcc213b"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/stardog-union/stardog-examples"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": []
+  },
+  "elapsed_seconds": 19.76
+}

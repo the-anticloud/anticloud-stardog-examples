@@ -1,0 +1,21 @@
+{
+ "framework": "21_SLSA_L3",
+ "title": "SLSA v1.0 Build Level 3",
+ "project": "STARDOG_EXAMPLES",
+ "basis": [
+  {
+   "check": "05_git_health",
+   "status": "PASS",
+   "observed": "head=a843413119e2d74a81abb132a43a57b284665e1a commits=1 clea"
+  },
+  {
+   "check": "04_sbom_cyclonedx",
+   "status": "PASS",
+   "observed": "CycloneDX 1.5 components=272"
+  }
+ ],
+ "verdict": "CONTROLS EVIDENCED \u2014 all basis checks PASS",
+ "pax_provenance": "Run ID loiskleinner/pax-benchmark-runner v3, 2026-10-02, Kaggle T4 x2 (2x 16GB VRAM), Ubuntu 22.04, Python 3.12. These are PAX L5 Narrow L2 General 27B model-level results \u2014 shared model component, not this project's verdict.",
+ "bench_sha3": "c9be72be6aea493bd1df314331250dc4c398b77fe0345fcdd6107484e2cd361c",
+ "register_sha3": "49caeaa17b20a8f06261a9894b6d3902d3ef262afa46504754114bb88183fbf1"
+}
